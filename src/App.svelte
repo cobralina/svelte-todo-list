@@ -23,7 +23,7 @@
   <header>
     <nav class="container">
       <ul>
-        <li><strong><ListTodo /> Svelte TodoList</strong></li>
+        <li><strong><ListTodo /> Corinnas Svelte TodoList</strong></li>
       </ul>
     </nav>
   </header>
@@ -31,7 +31,7 @@
   <main class="container">
     {#if view === "list_todos"}
       <TodoList on:goto:edit_todo={editTodo}/>
-      <button class="newtask" on:click={() => newTodo()} > New Task </button>
+      <button class="newtask" on:click={() => newTodo()} > Neues Todo </button>
     {:else if view === "new_todo"}
     <NewTodo />
     {:else if view === "edit_todo"}

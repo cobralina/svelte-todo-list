@@ -13,7 +13,7 @@
   }
 
   let dueDate="";
-  let title="Text for your task";
+  let title="Aufgabentext";
   let done=false;
  
 </script>
@@ -26,8 +26,8 @@
 
     <input type="text" id="text" name="text" bind:value={title}>
 
-    <button on:click={() => sendData()}>Submit</button>
-    <button on:click={() => getBack()}>Cancel</button>
+    <button on:click={() => sendData()}>Bestätigen</button>
+    <button on:click={() => getBack()}>Abbrechen</button>
 
 
   </form>

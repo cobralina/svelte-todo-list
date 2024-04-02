@@ -26,7 +26,7 @@
 </script>
 
 <div>
-  <h1>Your Todos</h1>
+  <h1>Meine Todos</h1>
 
   {#await todosPromise}
     <div aria-busy="true"></div>
@@ -49,11 +49,11 @@
             />
             {todo.title}
           </label>
-          <button on:click={() => dispatch("goto:edit_todo", { ...todo })}>Edit</button>
-          <button on:click={() => deleteTodo(todo)}>Delete</button>
+          <button on:click={() => dispatch("goto:edit_todo", { ...todo })}>Bearbeiten</button>
+          <button on:click={() => deleteTodo(todo)}>Löschen</button>
         </li>
       {:else}
-        <p>No todos yet.</p>
+        <p>Keine Aufgaben vorhanden.</p>
       {/each}
     </ul>
   {:catch error}

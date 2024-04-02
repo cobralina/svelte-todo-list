@@ -25,15 +25,15 @@
 </script>
 
 <div>
-  <h1>Edit Todo</h1>
+  <h1>Todo Bearbeiten</h1>
 
   <form>
     <input type="date" bind:value={todo.dueDate}>
 
     <input type="text" id="text" name="text" bind:value={todo.title}>
 
-    <button on:click={() => editData()}>Submit</button>
-    <button on:click={() => getBack()}>Cancel</button>
+    <button on:click={() => editData()}>Bestätigen</button>
+    <button on:click={() => getBack()}>Abbrechen</button>
 
 
   </form>
